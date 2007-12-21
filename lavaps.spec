@@ -15,6 +15,7 @@ BuildRequires:  tcl-devel
 BuildRequires:  tk-devel
 BuildRequires:  perl-XML-Parser
 BuildRequires:  GConf2
+BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
 Lavaps is an interactive process-tracking program like ``top'', but
