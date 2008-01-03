@@ -14,7 +14,7 @@ Patch0:		lavaps-gcc.patch.bz2
 BuildRequires:  tcl-devel
 BuildRequires:  tk-devel
 BuildRequires:  perl-XML-Parser
-BuildRequires:  GConf2
+BuildRequires:  GConf2 gnomeui2-devel
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
