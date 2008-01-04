@@ -43,13 +43,16 @@ make
 
 %find_lang %name
 
-(cd $RPM_BUILD_ROOT
-mkdir -p .%{_menudir}
-cat > ./usr/lib/menu/%{name} <<EOF
-?package(lavaps):needs="x11" section="Applications/Monitoring"  title="Lavaps" \
-longtitle="A graphical process viewer" icon="monitoring_section.png" command="lavaps"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Categories=System;Monitor;
+Name=Lavaps
+Comment=A graphical process viewer
+Icon=monitoring_section
+Exec=lavaps
 EOF
-)
 
 rm -rf $RPM_BUILD_ROOT%_sysconfdir/gconf/gconf.xml.defaults/%gconf.xml
 rm -rf $RPM_BUILD_ROOT%_sysconfdir/gconf/gconf.xml.defaults/apps/%gconf.xml
@@ -71,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README COPYING
 %{_bindir}/*
 %{_mandir}/man1/*
-%{_menudir}/*
+%{_datadir}/applications/mandriva-*.desktop
 #%_sysconfdir/gconf/gconf.xml.defaults/apps/lavaps/%gconf.xml
 #%_sysconfdir/gconf/gconf.xml.defaults/schemas/apps/lavaps/%gconf.xml
 %_sysconfdir/gconf/schemas/lavaps.schemas
