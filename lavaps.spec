@@ -1,6 +1,6 @@
 %define name lavaps
 %define version 2.7
-%define release %mkrel 5
+%define release %mkrel 7
 
 Summary: 	A lava lamp of currently running processes
 Name: 		%{name}
