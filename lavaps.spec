@@ -1,7 +1,7 @@
 Summary: 	A lava lamp of currently running processes
 Name: 		lavaps
 Version: 	2.7
-Release: 	%{mkrel 8}
+Release: 	%{mkrel 9}
 License: 	GPLv2+
 Group: 		Monitoring
 URL:	 	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS
