@@ -1,0 +1,10 @@
+--- lavaps-2.7/src/const_str.hh	2003-06-22 18:35:19.000000000 -0700
++++ lavaps-2.7/src/const_str.hh.new	2008-12-04 11:44:43.000000000 -0800
+@@ -25,6 +25,7 @@
+ #define lavaps_const_str_h
+ 
+ #include <string.h>
++#include <cstdlib>
+ 
+ class const_str {
+ protected:
