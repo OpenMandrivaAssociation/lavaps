@@ -4,7 +4,7 @@ Version: 	2.7
 Release: 	%{mkrel 10}
 License: 	GPLv2+
 Group: 		Monitoring
-URL:	 	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS
+URL:	 	https://www.isi.edu/~johnh/SOFTWARE/LAVAPS
 Source0: 	%{name}-%{version}.tar.bz2
 Patch0:		lavaps-gcc.patch
 # Drop an unnecessary include that breaks build - AdamW 2008/12
